@@ -1,22 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using Microsoft.Owin.Security;
-using Microsoft.Owin.Security.Cookies;
-using Microsoft.Owin.Security.OAuth;
-using Customerservice.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
-using System.Web;
-using Customerservice.Businessobject;
-using System.Data;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Web;
+//using Microsoft.Owin.Security;
+//using Microsoft.Owin.Security.Cookies;
+//using Microsoft.Owin.Security.OAuth;
+//using Customerservice.Models;
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Security.Claims;
+//using System.Threading.Tasks;
+//using System.Web;
+//using Customerservice.Businessobject;
+//using System.Data;
 
 namespace Customerservice.Helper_Code.OAuth2
 {
+    using Microsoft.Owin.Security;
+    using Microsoft.Owin.Security.Cookies;
+    using Microsoft.Owin.Security.OAuth;
+    using Models;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Security.Claims;
+    using System.Threading.Tasks;
+    using System.Web;
+    using Customerservice.Businessobject;
+    using System.Data;
     public class AppOAuthProvider : OAuthAuthorizationServerProvider
     {
         #region Private Properties  

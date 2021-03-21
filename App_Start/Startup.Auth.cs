@@ -9,7 +9,7 @@ using Customerservice.Models;
 using Microsoft.Owin.Security.OAuth;
 using Customerservice.Helper_Code.OAuth2;
 
-namespace Customerservice.App_Start
+namespace Customerservice
 {
     public partial class Startup
     {

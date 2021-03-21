@@ -12,6 +12,7 @@ using Customerservice.Businessobject;
 
 namespace Customerservice.Controllers
 {
+    [Authorize]
     public class SalesorderController : ApiController
     {
         public HttpResponseMessage Post([FromBody] Sales sales)
