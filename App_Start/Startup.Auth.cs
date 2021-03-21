@@ -49,8 +49,8 @@ namespace Customerservice
             {
                 TokenEndpointPath = new PathString("/Token"),
                 Provider = new AppOAuthProvider(PublicClientId),
-                AuthorizeEndpointPath = new PathString("/Account/ExternalLogin"),
-                AccessTokenExpireTimeSpan = TimeSpan.FromHours(4),
+                AuthorizeEndpointPath = new PathString("/Account/5xternalLogin"),
+                AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(4),
                 AllowInsecureHttp = true //Don't do this in production ONLY FOR DEVELOPING: ALLOW INSECURE HTTP!  
             };
 
