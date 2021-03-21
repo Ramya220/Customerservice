@@ -54,5 +54,12 @@ namespace Customerservice.Businessobject
 
         }
 
+        public DataTable LoginByUsernamePassword(string usernameVal, string passwordVal)
+        {
+            CGeneralDAC _daclayer = new CGeneralDAC();
+
+            return _daclayer.LoginByUsernamePassword(usernameVal, passwordVal);
+        }
+
     }
 }

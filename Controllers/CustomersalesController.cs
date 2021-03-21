@@ -12,6 +12,7 @@ using Customerservice.Businessobject;
 
 namespace Customerservice.Controllers
 {
+    [Authorize]
     public class CustomersalesController : ApiController
     {
         [HttpGet]

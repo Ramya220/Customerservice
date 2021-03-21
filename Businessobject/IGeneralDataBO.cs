@@ -18,5 +18,7 @@ namespace Customerservice.Businessobject
 
         bool  AddSalesOrderDetails(int  _referenceNumber, string _customerName, string _DocDate,string _postingDate,string _address,int _docTotal
                     ,string _state,Int64 _zipcode,string _street,string _country,string _salesPerson,int _itemNo,int _quantityordered,decimal _price,decimal _linetotal);
+
+       DataTable  LoginByUsernamePassword(string usernameVal, string passwordVal);
     }
 }

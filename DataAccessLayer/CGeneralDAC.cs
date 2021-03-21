@@ -197,5 +197,31 @@ namespace Customerservice.DataAccessLayer
 
         }
 
+        public DataTable LoginByUsernamePassword(string usernameVal, string passwordVal)
+        {
+            SqlCommand cmd = new SqlCommand();
+            DataTable dt;
+            string str = ConfigurationManager.ConnectionStrings["Customerorder"].ConnectionString;
+            SqlConnection con = new SqlConnection(str);
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "LoginByUsernamePassword";
+            cmd.Parameters.AddWithValue("@username", usernameVal);
+            cmd.Parameters.AddWithValue("@password", passwordVal);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+
+            try
+            {
+                con.Open();
+            }
+            catch
+            { }
+            int i = cmd.ExecuteNonQuery();
+            dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
+            return dt;
+        }
     }
 }
